@@ -26,13 +26,49 @@ body {
   padding: 0 24px;
 }
 
-.hero {
-  padding: 96px 0 64px;
+.topnav {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.about-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.about-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+#intro {
+  padding: 96px 0 48px;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
 
-.hero h1 {
+#intro h1 {
   font-size: 2.75rem;
   margin: 0 0 12px;
   letter-spacing: -0.02em;
@@ -42,13 +78,13 @@ body {
 .subtitle {
   font-size: 1rem;
   color: var(--text-muted);
-  margin: 0 0 24px;
+  margin: 0;
   font-weight: 500;
 }
 
 .bio {
   max-width: 560px;
-  margin: 0 auto 32px;
+  margin: 0 0 24px;
   color: var(--text-muted);
 }
 
@@ -69,11 +105,21 @@ body {
 }
 
 main {
-  padding: 64px 0;
+  padding-bottom: 64px;
 }
 
 section {
   margin-bottom: 64px;
+}
+
+#intro {
+  margin-bottom: 0;
+  scroll-margin-top: 70px;
+}
+
+#about {
+  padding-top: 64px;
+  scroll-margin-top: 70px;
 }
 
 h2 {
