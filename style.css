@@ -98,10 +98,44 @@ h2 {
   font-size: 0.9rem;
 }
 
+.section-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: -8px;
+  margin-bottom: 24px;
+}
+
+.interest-group {
+  margin-bottom: 28px;
+}
+
+.interest-group h3 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.interest-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-muted);
+}
+
+.interest-list li {
+  margin-bottom: 10px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+}
+
+#experience .project-card {
+  margin-bottom: 16px;
 }
 
 .project-card {
